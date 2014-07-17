@@ -25,7 +25,7 @@ define freetds::conf (
   if ! $version {
     fail("You must specify which version to use for this definition!")
   } else {
-    $valid_versions = "(4.2|5.0|7.0|8.0|auto)"
+    $valid_versions = "(4.2|5.0|7.0|7.1|7.2|8.0|auto)"
     validate_re($version, $valid_versions)
   }
   

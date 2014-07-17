@@ -5,7 +5,7 @@
 # Parameters:
 # 
 # [*version*]
-#   The TDS protocol version to use when connecting. Currently accepting: 4.2, 5.0, 7.0, 8.0, auto.
+#   The TDS protocol version to use when connecting. Currently accepting: 4.2, 5.0, 7.0, 7.1, 7.2, 8.0, auto.
 #   Default: 8.0
 # 
 # [*port*]
