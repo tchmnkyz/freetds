@@ -1,5 +1,5 @@
 name    'tchmnkyz-freetds'
-version '0.0.1'
+version '0.0.2'
 source 'http://git.rootservices.net/tchmnkyz/freetds.git'
 author 'Jeremy May <jeremy@rootservices.net>'
 license 'Apache2'
