@@ -7,9 +7,11 @@ class freetds::params {
   case $::osfamily {
     'debian': {
       $config = "/etc/freetds/freetds.conf"
+      $locales = "/etc/freetds/locales.conf"
     }
     'redhat': {
       $config = "/etc/freetds.conf"
+      $locales = "/etc/locales.conf"
     }
   }
 
