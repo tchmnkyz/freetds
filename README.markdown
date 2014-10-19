@@ -42,11 +42,38 @@ class {"freetds":
 }
 
 ::freetds::conf {"db01.example.org":
-	version => '7.0',
-	host => 'db01.example.org',
-	port => '1433',
-	nt_domain => 'example.org',
-	connection_timeout => '15',
+ version => '7.0',
+ host => 'db01.example.org',
+  port => '1433',
+  nt_domain => 'example.org',
+  connection_timeout => '15',
+}
+```
+
+### Locales usage:
+
+```puppet
+class {"freetds":
+ ensure => 'latest',
+ version => '4.2'
+}
+
+::freetds::locales {"default":
+  date_format => "%b %e %Y %I:%M:%S:%z%p"
+}
+
+::freetds::locales {"en_US":
+  date_format => "%b %e %Y %I:%M:%S:%z%p",
+  language => "us_english",
+  charset => "iso_1",
+}
+
+::freetds::conf {"db01.example.org":
+  version => '7.0',
+  host => 'db01.example.org',
+  port => '1433',
+  nt_domain => 'example.org',
+  connection_timeout => '15',
 }
 ```
 
@@ -62,7 +89,7 @@ class {"freetds":
 	* Parameters:
 		* install
 		* ensure
-* freetds::conf
+* freetds::conf 
 	* Parameters:
 		* version
 		* host
@@ -80,3 +107,8 @@ class {"freetds":
 		* emulate_little_endian
 		* client_charset
 		* text_size
+* freetds::locales
+	* Parameters:
+		* date_format
+		* language
+		* charset

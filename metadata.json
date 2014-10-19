@@ -1,32 +1,19 @@
 {
-  "author": "Jeremy May \u003cjeremy@rootservices.net\u003e",
-  "checksums": {
-    "LICENSE": "e3bb46e82001bdae6bac9aea3f182db3",
-    "manifests/params.pp": "1fb148dc349feba99135d0733a535ef5",
-    "manifests/package.pp": "1b428edc29c9161c0afe6600757579e7",
-    "templates/freetds.conf.erb": "359155893cbac40eb5731cce984831d0",
-    "templates/freetds-host.conf.erb": "7a93f76995b1412dcd3d9a50e9091eef",
-    "manifests/init.pp": "fe12b86b0ae32713725596dfe510cfa8",
-    "Modulefile": "a7803eb8048173371c045385e2d96f7b",
-    "manifests/conf.pp": "e163742220ddb27f0c67d9cac3f4a25c",
-    "README.markdown": "ee0d06f4fca63d584e828be621463004"
-  },
+  "source": "http://git.rootservices.net/tchmnkyz/freetds.git",
+  "version": "0.0.3",
+  "author": "Jeremy May <jeremy@rootservices.net>",
+  "license": "Apache2",
+  "project_page": "http://git.rootservices.net/tchmnkyz/freetds",
+  "name": "tchmnkyz-freetds",
+  "summary": "Install and Configure FreeTDS",
   "dependencies": [
     {
-      "name": "puppetlabs/concat",
-      "version_requirement": "1.1.0"
+      "version_requirement": "1.1.1",
+      "name": "puppetlabs/concat"
     },
     {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": "4.2.2"
+      "version_requirement": "4.3.2",
+      "name": "puppetlabs/stdlib"
     }
-  ],
-  "description": "This module was created to give a more dynamic aproach to maintaining the freetds.conf files on debian and redhat based systems.",
-  "license": "Apache2",
-  "name": "tchmnkyz-freetds",
-  "project_page": "http://git.rootservices.net/tchmnkyz/freetds",
-  "source": "http://git.rootservices.net/tchmnkyz/freetds.git",
-  "summary": "Install and Configure FreeTDS",
-  "types": [],
-  "version": "0.0.1"
+  ]
 }
