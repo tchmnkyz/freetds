@@ -15,7 +15,7 @@ define freetds::locales (
   }
   
   concat::fragment{"freetds_locales_${name}":
-    target => "${::freetds::params::config}",
+    target => "${::freetds::params::locales}",
     content => template("${module_name}/locales.conf.erb"),
     order   => 10,
   }
