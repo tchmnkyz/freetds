@@ -13,6 +13,12 @@ define freetds::locales (
     group => root,
     mode  => '0644',
   }
+
+  concat::fragment{"freetds_header":
+    target => "${::freetds::params::locales}",
+    content => "### This file is managed by freetds puppet module. ###\n### Please do not make any Manual Changes! ###\n\n",
+    order   => 01,
+  }
   
   concat::fragment{"freetds_locales_${name}":
     target => "${::freetds::params::locales}",
